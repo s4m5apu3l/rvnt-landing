@@ -1,0 +1,7 @@
+{
+	"editor.accessibilityPageSize": 200,
+	"editor.bracketPairColorization.independentColorPoolPerBracketType": false,
+	"editor.cursorBlinking": "expand",
+	"editor.cursorSmoothCaretAnimation": "on",
+	"editor.cursorWidth": 2
+}
