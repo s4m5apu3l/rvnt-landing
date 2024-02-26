@@ -167,15 +167,17 @@ document.addEventListener('DOMContentLoaded', () => {
         const numbersObserver = new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
+                    console.dir(entry.target.dataset.suffix);
+                    
                     const count = new CountUp(
-                        entry.target.id, // 1. задаём идентификатор элемента с числом
-                        entry.target.dataset.num, // 3. задаём конечное число (берем из data-атрибута)
-                        entry.target.dataset.duration || 4, // 5. задаём продолжительность анимации в секундах (если у элемента есть атрибут data-duration, то берём из него значение, иначе назначаем 4 секунды по-умолчанию)
+                        entry.target.id,
+                        entry.target.dataset.num,
+                        // entry.target.dataset.duration || 4,
                         {
+                            prefix: entry.target.dataset.prefix || '',
+                            suffix: entry.target.dataset.suffix || '', 
                             useEasing: true, //анимация
-                            separator: ' ', // задаём разделитель групп разрядов (например для миллиона - 1 000 000)
-                            prefix: entry.target.dataset.prefix || '', // задаём префикс - любые символы перед числом (берем значение из data-prefix, если не указано - то задаем пустую строку по умолчанию)
-                            suffix: entry.target.dataset.suffix || '', // задаём суффикс - любые символы после числа (берем значение из data-suffix, если не указано - то задаем пустую строку по умолчанию)
+                            separator: '',
                         }
                     );
                     count.start();
