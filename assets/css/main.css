@@ -1349,6 +1349,7 @@ footer.l-footer {
     border-radius: 1000px;
     border: 1px solid #012839;
     width: fit-content;
+    color: #012839;
 }
 .l-hero__img {
     display: flex;
