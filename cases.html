@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>RVNT</title>
+        <!-- favicons -->
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <!-- 180x180 - ставим первым для safari -->
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <!-- 32x32 -->
+        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+        <link rel="manifest" href="/manifest.webmanifest" />
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link href="./assets/css/jquery.fancybox.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <!-- for yandex -->
+        <link rel="yandex-tableau-widget" href="/tableau.json" />
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    </head>
+
+    <body>
+        <header class="l-header">
+            <div class="l-wrapper">
+                <div class="l-header__content">
+                    <a href="/" class="l-header__logo">
+                        <img src="./assets/img/logo.svg" alt="logo RVNT" />
+                    </a>
+                    <nav class="l-header__nav">
+                        <ul>
+                            <li><a href="#">Готовые решения Битрикс</a></li>
+                            <li><a href="#">Кейсы</a></li>
+                            <li><a href="#">Услуги</a></li>
+                            <li><a href="#">Агентство</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Вакансии</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                        <div class="l-header__mob-content">
+                            <span class="text-dark">Оставляй заявку, что бы работать с нами</span>
+                            <button class="l-header__mob-btn l-btn l-btn-active">Оставить заявку</button>
+                        </div>
+                    </nav>
+                    <button class="l-header__burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main class="l-main">
+            <section class="l-section l-hero bg-light">
+                <div class="l-wrapper">
+                    <ul class="l-breadcrumbs">
+                        <li class="l-breadcrumbs__item">
+                            <a href="#" class="l-breadcrumbs__link">Digital-агентство</a>
+                            <!-- стоит при цикле без условий, потому что ::last-schild display none -->
+                            <span class="line">/</span>
+                        </li>
+
+                        <li class="l-breadcrumbs__item">
+                            <a href="#" class="l-breadcrumbs__link">Кейсы</a>
+                            <span class="line">/</span>
+                        </li>
+                        <li class="l-breadcrumbs__item">
+                            <a href="#" class="l-breadcrumbs__link">СЗТТ</a>
+                            <span class="line">/</span>
+                        </li>
+                    </ul>
+                    <div class="l-hero__content">
+                        <div class="l-hero__descr">
+                            <h1 class="l-title">Завод "Волна"</h1>
+
+                            <p class="l-text">
+                                <span class="c-bold">Увеличили трафик на 60%:</span>
+                                кейс о продвижении сайта производителя резервуаров
+                            </p>
+                            <p class="l-descr">
+                                До 2022 года мы работали с клиентом над продвижением сайта. На момент
+                                перерыва  проект вырос на 33% по трафику, ежемесячная аудитория составляла
+                                порядка 30 тысяч посетителей.
+                            </p>
+                        </div>
+                        <div class="l-hero__img">
+                            <img src="https://placehold.co/600x400" class="l-hero__img-img" alt="case img" />
+                            <a href="#" class="l-hero__img-link">
+                                <span>sztt.revanta.ru</span>
+                                <i class="icon icon-14 icon--arrow-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="l-section-text">
+                <div class="l-wrapper">
+                    <div class="l-grid-section">
+                        <h3 class="title">О клиенте</h3>
+                        <div class="l-grid-section__block">
+                            <p class="text">
+                                ООО «ВолНА» – производитель нефтегазового и резервуарного оборудования. Завод
+                                выпускает все, что необходимо для парка резервуаров, нефтебаз и АЗС: клапаны,
+                                хлопушки, люки, заборные устройства и т.д.
+                                <br />
+                                <br />
+                                Продают продукцию по всей России. Среди партнеров «ВолНА» Газпромнефть,
+                                Лукойл, Роснефть и другие нефтяные компании.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="l-section-text bg-light">
+                <div class="l-wrapper">
+                    <div class="l-grid-section">
+                        <h3 class="title">Задача проекта</h3>
+                        <div class="l-grid-section__block">
+                            <p class="text">
+                                До 2022 года мы работали с клиентом над продвижением сайта. На момент перерыва
+                                проект вырос на 33% по трафику, ежемесячная аудитория составляла порядка 30
+                                тысяч посетителей.
+                                <br />
+                                <br />
+                                Задача – увеличить трафик теми же методами, что мы использовали ранее.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="l-section-text">
+                <div class="l-wrapper">
+                    <div class="l-grid-section">
+                        <h3 class="title">Основной упор делаем на SEO и юзабилити</h3>
+                        <div class="l-grid-section__block">
+                            <p class="text">
+                                После перерыва клиент повторно обратился к нам в начале 2023 года для
+                                продолжения работ по продвижению сайта. 
+                                <br />
+                                Заказчик предпочел развивать сайт теми же методами, что мы использовали
+                                раньше, т.е. основной упор делаем на SEO и юзабилити.
+                                <br />
+                                За время перерыва проект подрос на 33% по трафику
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="l-grid-section__imgs">
+                        <figure class="l-img__figure mt-80">
+                            <img src="https://placehold.co/600x400" class="l-img__img" alt="case img" />
+                        </figure>
+                        <figure class="l-img__figure mt-80">
+                            <figcaption class="l-img__figcaption left">
+                                Позиции при этом «прыгали»
+                                <br />
+                                в пределах 22%-40%:
+                            </figcaption>
+                            <img src="https://placehold.co/600x400" class="l-img__img" alt="case img" />
+                            <figcaption class="l-img__figcaption right">
+                                Заказчик хотел дополнительно увеличить трафик и сделать его более стабильным.
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <section class="l-section-text bg-light">
+                <div class="l-wrapper">
+                    <div class="l-section-text__title">
+                        <h3 class="title">
+                            Результаты: поисковый трафик по Яндексу увеличился на 44%, а в Google на 60%
+                        </h3>
+                    </div>
+
+                    <div class="l-grid-section__imgs">
+                        <figure class="l-img__figure mt-40">
+                            <figcaption class="l-img__figcaption left">
+                                Вот результаты после нашей работы: поисковый трафик увеличился на 51% с 29 525
+                                до 44 634 уникальных пользователей:
+                            </figcaption>
+                            <img src="/assets/img/tesst.png" class="l-img__img" alt="case img" />
+                            <figcaption class="l-img__figcaption right">
+                                Ниже представлен график за полгода: пунктирной линией указан трафик за 2023,
+                                сплошной – за 2022.
+                            </figcaption>
+                        </figure>
+                        <figure class="l-img__figure mt-40">
+                            <img src="/assets/img/case--2.png" class="l-img__img" alt="case img" />
+                            <figcaption class="l-img__figcaption">
+                                Что касается общего поискового трафика, то за год с Яндекса он вырос на 44% с
+                                14 965 до 21 606 уникальных пользователей.
+                            </figcaption>
+                        </figure>
+                        <figure class="l-img__figure mt-40">
+                            <figcaption class="l-img__figcaption">
+                                По Google трафик вырос на 60% с 14 410 до 22 989 уникальный пользователей:
+                            </figcaption>
+                            <img src="https://placehold.co/1240x285" class="l-img__img" alt="case img" />
+                        </figure>
+                        <figure class="l-img__figure mt-40">
+                            <img src="https://placehold.co/600x400" class="l-img__img" alt="case img" />
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <section class="l-section-text">
+                <div class="l-wrapper">
+                    <div class="l-section-text__title">
+                        <h3 class="title">Позиции сайта в поиске</h3>
+                    </div>
+
+                    <div class="l-grid-section__imgs">
+                        <figure class="l-img__figure mt-40">
+                            <figcaption class="l-img__figcaption left">
+                                Ниже анализ по 1077 ключевым запросам семантического ядра. Если сравнивать с
+                                началом года, то процент запросов в ТОП-10  Яндекса вырос с 37% до 45%:
+                            </figcaption>
+                            <img src="https://placehold.co/1240x285" class="l-img__img" alt="case img" />
+                            <figcaption class="l-img__figcaption right">
+                                Данные представлены по Москве.
+                            </figcaption>
+                        </figure>
+                        <figure class="l-img__figure mt-40">
+                            <figcaption class="l-img__figcaption right">
+                                В Google по тому же региону позиции вырос с 42% до 44%:
+                            </figcaption>
+                            <img src="https://placehold.co/1240x285" class="l-img__img" alt="case img" />
+                            <figcaption class="l-img__figcaption left">
+                                Позиции стали более стабильными. До этого они прыгали с 22% до 42%.
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <section class="l-section-text bg-light">
+                <div class="l-wrapper">
+                    <div class="l-grid-section">
+                        <h3 class="title">Резюмируем</h3>
+                        <div class="l-grid-section__block">
+                            <p class="text">
+                                На примере этого кейса видно, что нельзя один раз оптимизировать сайт и
+                                постоянно получать стабильный трафик. Периодически нужно проводить технический
+                                аудит, решать проблемы и устранять ошибки на сайте.
+                                <br />
+                                <br />
+                                Но даже исключительно за счет SEO-оптимизации и размещения на бесплатных
+                                площадках, можно увеличить количество уникальных пользователей.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="l-section-text">
+                <div class="l-wrapper">
+                    <div class="l-grid-section">
+                        <h3 class="title">Как это было?</h3>
+                        <div class="l-grid-section__block">
+                            <p class="text">
+                                “На примере этого кейса видно, что нельзя один раз оптимизировать сайт и
+                                постоянно получать стабильный трафик. Периодически нужно проводить технический
+                                аудит, решать проблемы и устранять ошибки на сайте.
+                                <br />
+                                <br />
+                                Но даже исключительно за счет SEO-оптимизации и размещения на бесплатных
+                                площадках, можно увеличить количество уникальных пользователей. ”
+                            </p>
+
+                            <div class="l-user-block mt-60">
+                                <img src="https://placehold.co/100x100" alt="user img" />
+                                <div class="descr">
+                                    <span class="title">Руководитель проекта</span>
+                                    <span class="name">Евгений Лазарев</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="l-section-text bg-light">
+                <div class="l-wrapper">
+                    <div class="l-section-text__title">
+                        <h3 class="title">кОМАНДА ПРОЕКТА</h3>
+                    </div>
+
+                    <div class="l-users-grid mt-60">
+                        <div class="l-user-block">
+                            <img src="https://placehold.co/100x100" alt="user img" />
+                            <div class="descr">
+                                <span class="title">Руководитель проекта</span>
+                                <span class="name">Евгений Лазарев</span>
+                            </div>
+                        </div>
+                        <div class="l-user-block">
+                            <img src="https://placehold.co/100x100" alt="user img" />
+                            <div class="descr">
+                                <span class="title">Руководитель проекта</span>
+                                <span class="name">Евгений Лазарев</span>
+                            </div>
+                        </div>
+                        <div class="l-user-block">
+                            <img src="https://placehold.co/100x100" alt="user img" />
+                            <div class="descr">
+                                <span class="title">Руководитель проекта</span>
+                                <span class="name">Евгений Лазарев</span>
+                            </div>
+                        </div>
+                        <div class="l-user-block">
+                            <img src="https://placehold.co/100x100" alt="user img" />
+                            <div class="descr">
+                                <span class="title">Руководитель проекта</span>
+                                <span class="name">Евгений Лазарев</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="l-form-case">
+                <div class="l-wrapper">
+                    <div class="l-form-case__content">
+                        <p class="l-descr">
+                            Расскажите о ваших задачах, а мы предложим стратегию продвижения и подберем нужные
+                            инструменты
+                        </p>
+                        <form action="">
+                            <div class="l-form-case__form">
+                                <label class="l-input__label">
+                                    <span>Ваше имя</span>
+                                    <input
+                                        class="l-input"
+                                        type="text"
+                                        placeholder="Введите имя"
+                                        required
+                                    />
+                                </label>
+                                <label class="l-input__label">
+                                    <span>Ваш телефон</span>
+                                    <input
+                                        class="l-input"
+                                        type="tel"
+                                        placeholder="Введите телефон"
+                                        required
+                                    />
+                                </label>
+                                <button class="l-btn l-btn-active">Отправить заявку</button>
+                                <div class="l-form__content-footer">
+                                    <span>
+                                        Нажимая кнопку вы даете согласие на обработку персональных данных
+                                        в соответствии с политикой конфиденциальности
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+             
+                    </div>
+                </div>
+            </section>
+
+            <section class="l-projects l-section">
+                <div class="l-wrapper">
+                    <div class="l-projects__head">
+                        <h3 class="l-title dark left">Другие кейсы</h3>
+                        <div class="l-projects__swiper-btns">
+                            <div class="custom-swiper-btn-prev l-projects--swiper-btn-prev">
+                                <i class="icon icon-20 icon--arrow"></i>
+                            </div>
+                            <div class="custom-swiper-btn-next l-projects--swiper-btn-next">
+                                <i class="icon icon-20 icon--arrow"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="l-projects__content mt-40">
+                        <div class="swiper l-projects__swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <article class="l-projects__item">
+                                        <img
+                                            class="l-projects__item-img"
+                                            src="./assets/img/projects/1.png"
+                                            alt=""
+                                        />
+                                        <div class="l-projects__item-content">
+                                            <a class="l-projects__item-link" href="#">
+                                                <span>ЗиМ</span>
+                                                <i class="icon icon-40 icon--arrow-small"></i>
+                                            </a>
+                                            <hr />
+                                            <span class="l-projects__item-name">Корпоративный сайт</span>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <article class="l-projects__item">
+                                        <img
+                                            class="l-projects__item-img"
+                                            src="./assets/img/projects/2.png"
+                                            alt=""
+                                        />
+                                        <div class="l-projects__item-content">
+                                            <a class="l-projects__item-link" href="#">
+                                                <span>GRASS</span>
+                                                <i class="icon icon-40 icon--arrow-small"></i>
+                                            </a>
+                                            <hr />
+                                            <span class="l-projects__item-name">Корпоративный сайт</span>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <article class="l-projects__item">
+                                        <img
+                                            class="l-projects__item-img"
+                                            src="./assets/img/projects/3.png"
+                                            alt=""
+                                        />
+                                        <div class="l-projects__item-content">
+                                            <a class="l-projects__item-link" href="#">
+                                                <span>Intel Group</span>
+                                                <i class="icon icon-40 icon--arrow-small"></i>
+                                            </a>
+                                            <hr />
+                                            <span class="l-projects__item-name">Корпоративный сайт</span>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <article class="l-projects__item">
+                                        <img
+                                            class="l-projects__item-img"
+                                            src="./assets/img/projects/1.png"
+                                            alt=""
+                                        />
+                                        <div class="l-projects__item-content">
+                                            <a class="l-projects__item-link" href="#">
+                                                <span>ЗиМ</span>
+                                                <i class="icon icon-40 icon--arrow-small"></i>
+                                            </a>
+                                            <hr />
+                                            <span class="l-projects__item-name">Корпоративный сайт</span>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="l-projects__swiper-btns-lower">
+                            <div class="custom-swiper-btn-prev l-projects--swiper-btn-prev">
+                                <i class="icon icon-20 icon--arrow"></i>
+                            </div>
+                            <div class="custom-swiper-btn-next l-projects--swiper-btn-next">
+                                <i class="icon icon-20 icon--arrow"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="l-footer">
+            <div class="l-wrapper">
+                <div class="l-footer__content">
+                    <ul class="l-footer__contacts l-footer__nav">
+                        <li>
+                            <span>Наши контакты</span>
+                        </li>
+                        <li>
+                            <a href="tel:+7(343)201-73-11">+7 (343) 201-73-11</a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@revanta.ru">info@revanta.ru</a>
+                        </li>
+                    </ul>
+
+                    <ul class="l-footer__addresses l-footer__nav">
+                        <li>
+                            <span>Наш адрес</span>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Россия, 620014, Свердловская область</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                г. Екатеринбург, ул. Ленина 5л,БЦ "Самолет", офис 206
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <img class="l-logo" src="./assets/img/footer_name.png" alt="footer logo name" />
+        </footer>
+
+        <script src="./assets/js/main.js" type="module"></script>
+        <script src="./assets/js/jquery.fancybox.min.js"></script>
+    </body>
+</html>
